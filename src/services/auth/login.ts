@@ -1,6 +1,6 @@
-import { auth, provider } from '../../firebase-config';
+import { auth } from '../../firebase-config';
 import { User } from '../../types/';
-import { signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 
 export const loginWithEmailAndPassword = async ({email, password} : User) => {
   try {
