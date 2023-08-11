@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { GoogleAuthProvider, getAuth } from 'firebase/auth'
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_API_KEY,
+  apiKey: "AIzaSyDLH6RLVpvOJC1bV7oYO4ykUBujVqFj6Bk",
   authDomain: "logintemplateaps.firebaseapp.com",
   databaseURL: "https://logintemplateaps-default-rtdb.firebaseio.com",
   projectId: "logintemplateaps",

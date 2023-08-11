@@ -1,10 +1,10 @@
 import { useForm } from 'react-hook-form'
 import { loginWithEmailAndPassword } from '../../../services'
 import { User } from '../../../types'
-import { loginWithGoogle } from '../../../services' 
 import { useUser } from '../../../hooks/userHook'
 import { signInWithPopup } from 'firebase/auth'
 import { auth, provider } from '../../../firebase-config'
+import { FcGoogle } from 'react-icons/fc'
 function LoginForm() {
 
   const { register, handleSubmit } = useForm()
@@ -47,13 +47,13 @@ function LoginForm() {
       <input type="password" {...register('password')} placeholder='senha' />
       <br />
       <br />
-      <button onClick={handleSubmit(onSubmit as never)} >
+      <button onClick={handleSubmit(onSubmit as never)} type='submit' >
         Logar
       </button>
       <br />
       <br />
-      <button onClick={loginWithGoogle} >
-        Logar com o gugol
+      <button onClick={loginWithGoogle} type='button' className='googleButton' >
+        <FcGoogle /> Logar com o google
       </button>
     </form> : <h1>
     Logado
