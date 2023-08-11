@@ -60,5 +60,6 @@
   justify-content: center;
   font-weight: bold;
   cursor: pointer;
+  gap: .5rem;
   transition: all 300ms;
 }
